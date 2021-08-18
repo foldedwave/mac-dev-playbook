@@ -1,3 +1,5 @@
+scr=$0:A
+
 sudo whoami
 yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -12,3 +14,5 @@ source venv/bin/activate
 
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
+
+rm scr
