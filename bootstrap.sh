@@ -1,4 +1,3 @@
-# Install brew now - we will use it anyway but this handily installs mac command line tools too
 sudo whoami
 yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
