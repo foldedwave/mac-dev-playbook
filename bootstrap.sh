@@ -7,7 +7,6 @@ cd ~/source/ansible
 git clone https://github.com/foldedwave/mac-dev-playbook.git
 cd mac-dev-playbook
 
-# Do all python related commands inside a venv
 python3 -m venv ~/source/ansible/mac-dev-playbook/venv
 source venv/bin/activate
 
