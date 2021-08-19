@@ -1,7 +1,12 @@
 scr=$0:A
 
-sudo -v
+# Stop sudo from timing out
+while true; do
+    sudo -v
+    sleep 60
+done &
 
+# Install xcode command line tools
 chomp() {
   printf "%s" "${1/"$'\n'"/}"
 }
@@ -31,8 +36,6 @@ softwareupdate -l
 rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 
-
-sudo -v
 
 yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
