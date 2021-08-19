@@ -2,6 +2,8 @@ scr=$0:A
 
 # Stop sudo from timing out
 sudo -v
+sleep 5
+
 while true; do
     sudo -v
     sleep 60
