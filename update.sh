@@ -1,1 +1,3 @@
+softwareupdate -ia
+
 . ./brew.sh
