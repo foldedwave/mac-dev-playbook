@@ -1,6 +1,39 @@
 scr=$0:A
 
-sudo whoami
+sudo -v
+
+chomp() {
+  printf "%s" "${1/"$'\n'"/}"
+}
+
+touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+
+softwareupdate -l
+
+  clt_label_command="/usr/sbin/softwareupdate -l |
+                      grep -B 1 -E 'Command Line Tools' |
+                      awk -F'*' '/^ *\\*/ {print \$2}' |
+                      sed -e 's/^ *Label: //' -e 's/^ *//' |
+                      sort -V |
+                      tail -n1"
+  clt_label="$(chomp "$(/bin/bash -c "$clt_label_command")")"
+  echo $clt_label
+
+
+  if [[ -n "$clt_label" ]]; then
+    echo "Installing $clt_label"
+    softwareupdate -i $clt_label
+    #execute_sudo "/bin/rm" "-f" "$clt_placeholder"
+    #execute_sudo "/usr/bin/xcode-select" "--switch" "/Library/Developer/CommandLineTools"
+  fi
+
+
+rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+
+
+
+sudo -v
+
 yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 mkdir -p ~/source/ansible/
