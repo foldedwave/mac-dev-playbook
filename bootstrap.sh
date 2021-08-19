@@ -28,16 +28,17 @@ else
   brew install miniforge
 fi
 
-brew install mariadb \
+brew install \
+  mariadb \
   mongodb-community \
-  dotnet-sdk \
-  julia \
   powershell \
-  mas \
-  docker
+  mas
 
-brew install cask rider \
-  visual-studio-code
+brew install cask \
+  rider \
+  visual-studio-code \
+  julia \
+  docker
 
 # CLEANUP
 rm $scr
