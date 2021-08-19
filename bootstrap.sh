@@ -40,13 +40,11 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 
 
-yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+mkdir -p ~/source/provisioning/
+cd ~/source/provisioning
 
-mkdir -p ~/source/ansible/
-cd ~/source/ansible
-
-#git clone https://github.com/foldedwave/mac-dev-playbook.git
-#cd mac-dev-playbook
+git clone https://github.com/foldedwave/mac-dev-playbook.git
+cd mac-dev-playbook
 
 #python3 -m venv ~/source/ansible/mac-dev-playbook/venv
 #source venv/bin/activate
@@ -55,7 +53,10 @@ cd ~/source/ansible
 #python3 -m pip install -r requirements.txt
 
 
+
 # BREW
+yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew update
 brew upgrade
 
@@ -70,7 +71,9 @@ fi
 brew install \
   mariadb \
   mongodb-community \
-  mas
+  mas \
+  powershell \
+  dotnet-sdk
 
 brew install --cask \
   rider \
