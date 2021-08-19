@@ -20,6 +20,8 @@ cd ~/source/ansible
 brew update
 brew upgrade
 
+brew tap mongodb/brew
+
 if [[ "$(uname -m)" == "x86_64" ]]; then
   brew install miniconda
 else
