@@ -20,7 +20,7 @@ cd ~/source/ansible
 brew update
 brew upgrade
 
-if [[ "$(uname -m)" == "x86_64s" ]]; then
+if [[ "$(uname -m)" == "x86_64" ]]; then
   brew install miniconda
 else
   brew install miniforge
