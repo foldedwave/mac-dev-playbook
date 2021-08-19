@@ -31,10 +31,9 @@ fi
 brew install \
   mariadb \
   mongodb-community \
-  powershell \
   mas
 
-brew install cask \
+brew install --cask \
   rider \
   visual-studio-code \
   julia \
