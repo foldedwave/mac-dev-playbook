@@ -51,13 +51,12 @@ cd ~/source/provisioning
 if [ ! -d "./mac-dev-playbook" ]; then
   echo $fg[green]Cloning Repo$reset_color
   git clone https://github.com/foldedwave/mac-dev-playbook.git
+  cd mac-dev-playbook
 else
   echo $fg[green]Updating Repo$reset_color
+  cd mac-dev-playbook
   git pull
 fi
-
-cd mac-dev-playbook
-
 
 
 #python3 -m venv ~/source/ansible/mac-dev-playbook/venv
