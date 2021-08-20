@@ -12,7 +12,6 @@ if [[ $newCRC != $originalCRC ]]; then
   return
 fi
 
-
 softwareupdate -ia
 
 . ./brew.sh
