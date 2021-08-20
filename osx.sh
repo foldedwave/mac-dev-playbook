@@ -1,0 +1,1 @@
+defaults write ANSGlobalDomain AppleInterfaceStyle Dark
