@@ -35,7 +35,7 @@ else
   clt_label="$(chomp "$(/bin/bash -c "$clt_label_command")")"
 
   if [[ -n "$clt_label" ]]; then
-    softwareupdate -i $clt_label
+    softwareupdate -i $clt_label 1>/dev/null
     #execute_sudo "/bin/rm" "-f" "$clt_placeholder"
     #execute_sudo "/usr/bin/xcode-select" "--switch" "/Library/Developer/CommandLineTools"
   fi
@@ -50,12 +50,12 @@ cd ~/source/provisioning
 
 if [ ! -d "./mac-dev-playbook" ]; then
   echo $fg[green]Cloning Repo$reset_color
-  git clone https://github.com/foldedwave/mac-dev-playbook.git
+  git clone https://github.com/foldedwave/mac-dev-playbook.git 1>/dev/null
   cd mac-dev-playbook
 else
   echo $fg[green]Updating Repo$reset_color
   cd mac-dev-playbook
-  git pull
+  git pull --ff-only 1>/dev/null
 fi
 
 
