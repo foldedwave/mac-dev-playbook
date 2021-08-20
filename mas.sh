@@ -1,3 +1,5 @@
+mas upgrade
+
 mas install 462058435  # Microsoft Excel
 mas install 462054704  # Microsoft Word
 mas install 784801555  # Microsoft OneNote
