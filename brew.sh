@@ -8,6 +8,7 @@ brew update
 brew upgrade
 
 brew tap mongodb/brew
+brew tap homebrew/cask-fonts
 
 if [[ "$(uname -m)" == "x86_64" ]]; then
   brew install miniconda
@@ -26,4 +27,5 @@ brew install --cask \
   rider \
   visual-studio-code \
   julia \
-  docker
+  docker \
+  font-fira-code
