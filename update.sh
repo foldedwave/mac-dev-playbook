@@ -17,3 +17,6 @@ softwareupdate -ia 1>/dev/null
 . ./brew.sh
 . ./mas.sh
 . ./osx.sh
+. ./shell.sh
+
+sudo shutdown -r now
