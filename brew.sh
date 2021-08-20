@@ -1,9 +1,9 @@
 autoload colors; colors
-echo $fg[green]***Installing/Updating Homebrew$reset_color
+echo $fg[green]Installing/Updating Homebrew$reset_color
 
 yes '' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo $fg[green]***Installing/Updating apps from Brew$reset_color
+echo $fg[green]Installing/Updating apps from Brew$reset_color
 brew update
 brew upgrade
 
