@@ -3,7 +3,7 @@ autoload colors; colors
 echo $fg[green]Running Update Script$reset_color
 
 originalCRC=$(crc32 ./update.sh)
-git pull
+git pull --ff-only 1>/dev/null
 newCRC=$(crc32 ./update.sh)
 
 if [[ $newCRC != $originalCRC ]]; then
@@ -12,7 +12,7 @@ if [[ $newCRC != $originalCRC ]]; then
   return
 fi
 
-softwareupdate -ia
+softwareupdate -ia 1>/dev/null
 
 . ./brew.sh
 . ./mas.sh
