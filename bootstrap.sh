@@ -15,7 +15,7 @@ chomp() {
   printf "%s" "${1/"$'\n'"/}"
 }
 
-xcode-select -p 1>/dev/null
+xcode-select -p 1>/dev/null 2>&1
 
 if [[ '0' == $? ]]; then
   echo $fg[green]Command Line Tools already installed$reset_color
@@ -34,8 +34,6 @@ else
 
   if [[ -n "$clt_label" ]]; then
     softwareupdate -i $clt_label 1>/dev/null
-    #execute_sudo "/bin/rm" "-f" "$clt_placeholder"
-    #execute_sudo "/usr/bin/xcode-select" "--switch" "/Library/Developer/CommandLineTools"
   fi
 
   rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
@@ -48,12 +46,12 @@ cd ~/source/provisioning
 
 if [ ! -d "./mac-dev-playbook" ]; then
   echo $fg[green]Cloning Repo$reset_color
-  git clone https://github.com/foldedwave/mac-dev-playbook.git 1>/dev/null
+  git clone --quiet https://github.com/foldedwave/mac-dev-playbook.git 1>/dev/null
   cd mac-dev-playbook
 else
   echo $fg[green]Updating Repo$reset_color
   cd mac-dev-playbook
-  git pull --ff-only 1>/dev/null
+  git pull --ff-only --queit 1>/dev/null
 fi
 
 
