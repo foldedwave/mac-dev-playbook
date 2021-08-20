@@ -1,5 +1,3 @@
-scr=$0:A
-
 autoload colors; colors
 
 # Stop sudo from timing out
@@ -73,4 +71,3 @@ fi
 
 
 # CLEANUP
-rm $scr
