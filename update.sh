@@ -14,15 +14,23 @@ fi
 
 softwareupdate -ia 1>/dev/null
 
-defaults read > /tmp/before
+#defaults read > /tmp/before
 
 . ./brew.sh
-. ./mas.sh
+#. ./mas.sh
 . ./osx.sh
 . ./shell.sh
 
-defaults read > /tmp/after
+#defaults read > /tmp/after
 
-if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
-  sudo shutdown -r now
+#if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
+#  sudo shutdown -r now
+#fi
+
+
+# Restart affected applications if `--no-restart` flag is not present.
+if [[ ! ($* == *--no-restart*) ]]; then
+  for app in "cfprefsd" "Dock" "Finder" "Mail" "SystemUIServer"; do
+    killall "${app}" > /dev/null 2>&1
+  done
 fi
