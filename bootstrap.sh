@@ -69,3 +69,6 @@ fi
 
 
 # CLEANUP
+if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
+  sudo shutdown -r now
+fi
