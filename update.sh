@@ -14,9 +14,15 @@ fi
 
 softwareupdate -ia 1>/dev/null
 
+defaults read > /tmp/before
+
 . ./brew.sh
 . ./mas.sh
 . ./osx.sh
 . ./shell.sh
 
-sudo shutdown -r now
+defaults read > /tmp/after
+
+if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
+  sudo shutdown -r now
+fi
