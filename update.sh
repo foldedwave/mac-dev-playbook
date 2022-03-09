@@ -20,6 +20,7 @@ softwareupdate -ia 1>/dev/null
 . ./mas.sh
 . ./osx.sh
 . ./shell.sh
+. ./rust.sh
 
 #defaults read > /tmp/after
 
