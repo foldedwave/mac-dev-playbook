@@ -21,8 +21,7 @@ brew install --quiet \
   mongodb-community \
   mas \
   powershell \
-  dotnet-sdk \
-  rust
+  dotnet-sdk
 
 brew install --quiet --cask \
   rider \
