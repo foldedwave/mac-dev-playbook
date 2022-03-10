@@ -51,7 +51,7 @@ if [ ! -d "./mac-dev-playbook" ]; then
 else
   echo $fg[green]Updating Repo$reset_color
   cd mac-dev-playbook
-  git pull --ff-only --queit 1>/dev/null
+  git pull --ff-only --quiet 1>/dev/null
 fi
 
 
