@@ -16,16 +16,13 @@ else
   brew install --quiet miniforge
 fi
 
-brew install --quiet \
-  mariadb \
-  mongodb-community \
-  mas \
-  powershell \
-  dotnet-sdk
+brew install --quiet mariadb
+brew install --quiet mongodb-community
+brew install --quiet mas
+brew install --quiet powershell
+brew install --quiet dotnet-sdk
 
-brew install --quiet --cask \
-  rider \
-  visual-studio-code \
-  julia \
-  docker \
-  font-fira-code
+brew install --quiet --cask rider
+brew install --quiet --cask visual-studio-code
+brew install --quiet --cask julia
+brew install --quiet --cask docker
