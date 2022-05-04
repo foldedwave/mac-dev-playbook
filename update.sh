@@ -22,6 +22,7 @@ softwareupdate -ia 1>/dev/null
 . ./fonts.sh
 . ./shell.sh
 . ./rust.sh
+. ./dotfiles.sh
 
 #defaults read > /tmp/after
 
