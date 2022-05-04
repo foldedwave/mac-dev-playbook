@@ -8,7 +8,7 @@ brew update 1>/dev/null
 brew upgrade 1>/dev/null
 
 brew tap mongodb/brew
-brew tap homebrew/cask-fonts
+//brew tap homebrew/cask-fonts
 
 if [[ "$(uname -m)" == "x86_64" ]]; then
   brew install --quiet miniconda
@@ -21,8 +21,10 @@ brew install --quiet mongodb-community
 brew install --quiet mas
 brew install --quiet powershell
 brew install --quiet dotnet-sdk
+brew install --quiet colima
+brew install --quiet docker
 
 brew install --quiet --cask rider
 brew install --quiet --cask visual-studio-code
-brew install --quiet --cask julia
-brew install --quiet --cask docker
+//brew install --quiet --cask julia
+//brew install --quiet --cask docker
