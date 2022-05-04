@@ -19,6 +19,7 @@ softwareupdate -ia 1>/dev/null
 . ./brew.sh
 . ./mas.sh
 . ./osx.sh
+. ./fonts.sh
 . ./shell.sh
 . ./rust.sh
 
