@@ -25,9 +25,10 @@ brew install --quiet powershell
 brew install --quiet dotnet-sdk
 brew install --quiet colima
 brew install --quiet docker
-brew install --quiet powerlevel10k
+#brew install --quiet powerlevel10k
 brew install --quiet task
 
+brew install --quiet --cask vscodium
 #brew install --quiet --cask rider
 #brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask julia
