@@ -28,7 +28,7 @@ brew install --quiet docker
 #brew install --quiet powerlevel10k
 brew install --quiet task
 
-brew install --quiet --cask vscodium
+#brew install --quiet --cask vscodium
 #brew install --quiet --cask rider
 #brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask julia
