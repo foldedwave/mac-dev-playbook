@@ -1,4 +1,3 @@
-
 # mac-dev-playbook
 
 ```
