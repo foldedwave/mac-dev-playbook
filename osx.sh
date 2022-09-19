@@ -13,3 +13,8 @@ defaults write NSGlobalDomain KeyRepeat 2
 # ITerm2 prefs in custom location for syncing to dotfiles
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# Disable international alternative popup
+defaults write -g ApplePressAndHoldEnabled -bool false# Disable international alternative popup
+defaults write -g ApplePressAndHoldEnabled -bool false# Disable international alternative popup
+defaults write -g ApplePressAndHoldEnabled -bool false
