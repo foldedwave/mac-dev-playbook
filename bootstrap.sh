@@ -54,6 +54,10 @@ else
   git pull --ff-only --quiet 1>/dev/null
 fi
 
+for file in *.sh
+do
+  chmod u+x $file
+done
 
 #python3 -m venv ~/source/ansible/mac-dev-playbook/venv
 #source venv/bin/activate
@@ -66,7 +70,9 @@ fi
 # Run the update scripts
 . ./update.sh
 
-
+rm ../pushall.sh
+ln -s ~/source/mac-dev-playbook/scripts/pushall.sh ../pushall.sh
+chmod u+x ../pushall.sh
 
 # CLEANUP
 #if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
