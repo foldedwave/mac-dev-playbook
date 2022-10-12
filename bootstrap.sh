@@ -41,8 +41,8 @@ fi
 
 
 # Clone this repo or update
-mkdir -p ~/source/provisioning/
-cd ~/source/provisioning
+mkdir -p ~/source/
+cd ~/source
 
 if [ ! -d "./mac-dev-playbook" ]; then
   echo $fg[green]Cloning Repo$reset_color
