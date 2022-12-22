@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 autoload colors; colors
 echo $fg[green]Configuring shell$reset_color
 

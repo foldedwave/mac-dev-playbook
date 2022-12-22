@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 autoload colors; colors
 echo $fg[green]Installing apps from App Store$reset_color
 

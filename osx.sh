@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 autoload colors; colors
 echo $fg[green]Configuring macos$reset_color
 
@@ -15,6 +17,4 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # Disable international alternative popup
-defaults write -g ApplePressAndHoldEnabled -bool false# Disable international alternative popup
-defaults write -g ApplePressAndHoldEnabled -bool false# Disable international alternative popup
 defaults write -g ApplePressAndHoldEnabled -bool false

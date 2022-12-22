@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 autoload colors; colors
 
 echo $fg[green]Running Update Script$reset_color
@@ -26,9 +28,9 @@ softwareupdate -ia 1>/dev/null
 
 #defaults read > /tmp/after
 
-if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
-  sudo shutdown -r now
-fi
+#if [[ "$(diff /tmp/before /tmp/after)" != "" ]]; then
+#  sudo shutdown -r now
+#fi
 
 
 # Restart affected applications if `--no-restart` flag is not present.
