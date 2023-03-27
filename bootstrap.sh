@@ -61,13 +61,6 @@ do
   chmod u+x $file
 done
 
-#python3 -m venv ~/source/ansible/mac-dev-playbook/venv
-#source venv/bin/activate
-
-#python3 -m pip install --upgrade pip
-#python3 -m pip install -r requirements.txt
-
-
 
 # Run the update scripts
 . ./update.sh

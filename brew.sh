@@ -17,13 +17,8 @@ brew update 1>/dev/null
 brew upgrade 1>/dev/null
 
 brew tap mongodb/brew
-#brew tap homebrew/cask-fonts
 
-if [[ "$(uname -m)" == "x86_64" ]]; then
-  brew install --quiet miniconda
-else
-  brew install --quiet miniforge
-fi
+brew install --quiet miniconda
 
 brew install --quiet mariadb
 brew install --quiet mongodb-community
