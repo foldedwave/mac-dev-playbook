@@ -31,7 +31,8 @@ brew install --quiet romkatv/powerlevel10k/powerlevel10k
 brew install --quiet task
 brew install --quiet timewarrior
 
-brew install --cask iterm2
+#brew install --cask iterm2
 #brew install --quiet --cask rider
 brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask docker
+brew install --quiet --cask logseq
