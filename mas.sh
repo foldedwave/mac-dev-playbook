@@ -13,3 +13,5 @@ mas install 462054704  # Microsoft Word
 mas install 1336679524 # BlueSee BLE Debugger
 mas install 1295203466 # Microsoft Remote Desktop
 mas install 405399194  # Kindle
+
+mas install 1472777122 # Honey

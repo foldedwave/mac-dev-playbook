@@ -20,19 +20,30 @@ brew tap mongodb/brew
 
 brew install --quiet miniconda
 
-brew install --quiet mariadb
-brew install --quiet mongodb-community
 brew install --quiet mas
 brew install --quiet powershell
 brew install --quiet dotnet-sdk
-brew install --quiet colima
-brew install --quiet docker
 brew install --quiet romkatv/powerlevel10k/powerlevel10k
 brew install --quiet task
 brew install --quiet timewarrior
+brew install --quiet ansible
+brew install --quiet gnupg
+brew install --quiet htop
+brew install --quiet wget
+
+#brew install --quiet mariadb
+#brew install --quiet mongodb-community
+
+brew install --quiet colima
+brew install --quiet docker
+#brew install --quiet kubernetes-cli
+#brew install --quiet kompose
+#brew install --quiet helm
+
 
 #brew install --cask iterm2
 #brew install --quiet --cask rider
 brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask docker
 brew install --quiet --cask logseq
+brew install --quiet --cask kitty
