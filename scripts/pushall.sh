@@ -7,9 +7,9 @@ echo $P
 
 for fullfile in $P/**/*
 do
-  if [ -f "$fullfile/push.sh" ]
+  if [ -f "$fullfile/fwpush.sh" ]
   then
-    echo $fullfile/push.sh
-    $fullfile/push.sh
+    echo $fullfile/fwpush.sh
+    $fullfile/fwpush.sh
   fi
 done
