@@ -17,6 +17,7 @@ brew update 1>/dev/null
 brew upgrade 1>/dev/null
 
 brew tap mongodb/brew
+brew tap d12frosted/emacs-plus
 
 brew install --quiet miniconda
 
@@ -30,6 +31,7 @@ brew install --quiet ansible
 brew install --quiet gnupg
 brew install --quiet htop
 brew install --quiet wget
+brew install --quiet ripgrep
 
 #brew install --quiet mariadb
 #brew install --quiet mongodb-community
