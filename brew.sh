@@ -47,3 +47,23 @@ brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask docker
 brew install --quiet --cask logseq
 brew install --quiet --cask kitty
+
+mkdir -p mail/gmail
+mkdir -p mail/hotmail
+mkdir -p mail/pwa-gmail
+mkdir -p mail/foldedwave
+brew install --quiet isync
+brew install --quiet mu
+
+brew install --quiet imagemagick
+brew install --quiet coreutils
+brew install --quiet gcc
+brew install --quiet gnu-sed
+brew install --quiet gnu-tar
+brew install --quiet make
+brew install --quiet mpv
+brew install --quiet node
+brew install --quiet nvm
+brew install --quiet plantuml
+brew install --quiet ripgrep
+brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
