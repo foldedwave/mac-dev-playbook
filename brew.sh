@@ -25,13 +25,12 @@ brew install --quiet mas
 brew install --quiet powershell
 brew install --quiet dotnet-sdk
 brew install --quiet romkatv/powerlevel10k/powerlevel10k
-brew install --quiet task
-brew install --quiet timewarrior
-brew install --quiet ansible
+#brew install --quiet task
+#brew install --quiet timewarrior
+#brew install --quiet ansible
 brew install --quiet gnupg
 brew install --quiet htop
 brew install --quiet wget
-brew install --quiet ripgrep
 
 #brew install --quiet mariadb
 #brew install --quiet mongodb-community
@@ -47,7 +46,7 @@ brew install --quiet docker
 #brew install --quiet --cask rider
 brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask docker
-brew install --quiet --cask logseq
+#brew install --quiet --cask logseq
 brew install --quiet --cask kitty
 
 mkdir -p mail/gmail
@@ -68,4 +67,5 @@ brew install --quiet node
 brew install --quiet nvm
 brew install --quiet plantuml
 brew install --quiet ripgrep
+brew install --quiet pngpaste
 brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
