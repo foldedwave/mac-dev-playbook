@@ -5,8 +5,8 @@ echo $fg[green]Installing apps from App Store$reset_color
 
 mas upgrade
 
-mas install 462058435  # Microsoft Excel
-mas install 462054704  # Microsoft Word
+#mas install 462058435  # Microsoft Excel
+#mas install 462054704  # Microsoft Word
 #mas install 784801555  # Microsoft OneNote
 #mas install 823766827  # OneDrive
 #mas install 1480068668 # Messenger
