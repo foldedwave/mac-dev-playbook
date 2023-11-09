@@ -24,7 +24,7 @@ brew install --quiet miniconda
 brew install --quiet mas
 brew install --quiet powershell
 brew install --quiet dotnet-sdk
-brew install --quiet romkatv/powerlevel10k/powerlevel10k
+brew install --quiet powerlevel10k
 #brew install --quiet task
 #brew install --quiet timewarrior
 #brew install --quiet ansible
@@ -68,4 +68,6 @@ brew install --quiet nvm
 brew install --quiet plantuml
 brew install --quiet ripgrep
 brew install --quiet pngpaste
+brew install --quiet pandoc
+brew install --quiet mactex
 brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
