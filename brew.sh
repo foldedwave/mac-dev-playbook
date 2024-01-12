@@ -71,3 +71,5 @@ brew install --quiet pngpaste
 brew install --quiet pandoc
 brew install --quiet mactex
 brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
+
+brew install --quiet rustup-init
