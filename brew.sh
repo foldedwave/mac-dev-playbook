@@ -56,6 +56,7 @@ mkdir -p mail/foldedwave
 brew install --quiet isync
 brew install --quiet mu
 
+brew install --quiet hyperfine
 brew install --quiet imagemagick
 brew install --quiet coreutils
 brew install --quiet gcc
