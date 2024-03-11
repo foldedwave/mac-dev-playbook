@@ -14,7 +14,7 @@ if [[ $newCRC != $originalCRC ]]; then
   return
 fi
 
-softwareupdate -ia
+#softwareupdate -ia
 
 #defaults read > /tmp/before
 
