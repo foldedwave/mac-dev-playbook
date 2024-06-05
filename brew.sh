@@ -75,3 +75,5 @@ brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-
 
 brew install --quiet rustup-init
 brew install --quiet rust-analyser
+
+brew install nvm
