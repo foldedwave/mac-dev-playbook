@@ -19,17 +19,17 @@ brew upgrade 1>/dev/null
 brew tap mongodb/brew
 brew tap d12frosted/emacs-plus
 
-brew install --quiet miniconda
+#brew install --quiet miniconda
 
 brew install --quiet mas
-brew install --quiet powershell
+#brew install --quiet powershell
 brew install --quiet dotnet-sdk
 brew install --quiet powerlevel10k
 #brew install --quiet task
 #brew install --quiet timewarrior
 #brew install --quiet ansible
 brew install --quiet gnupg
-brew install --quiet htop
+#brew install --quiet htop
 brew install --quiet wget
 
 #brew install --quiet mariadb
@@ -37,7 +37,7 @@ brew install --quiet wget
 
 brew install --quiet colima
 brew install --quiet docker
-#brew install --quiet kubernetes-cli
+brew install --quiet kubernetes-cli
 #brew install --quiet kompose
 #brew install --quiet helm
 
@@ -49,12 +49,12 @@ brew install --quiet --cask visual-studio-code
 #brew install --quiet --cask logseq
 brew install --quiet --cask kitty
 
-mkdir -p mail/gmail
-mkdir -p mail/hotmail
-mkdir -p mail/pwa-gmail
-mkdir -p mail/foldedwave
-brew install --quiet isync
-brew install --quiet mu
+#mkdir -p mail/gmail
+#mkdir -p mail/hotmail
+#mkdir -p mail/pwa-gmail
+#mkdir -p mail/foldedwave
+#brew install --quiet isync
+#brew install --quiet mu
 
 brew install --quiet hyperfine
 brew install --quiet imagemagick
