@@ -9,7 +9,7 @@ defaults delete NSGlobalDomain AppleInterfaceStyleSwitchesAutomatically
 defaults write com.apple.dock "tilesize" -int "36" && killall Dock
 
 # Keyboard repeat settings
-defaults write NSGlobalDomain InitialKeyRepeat 25
+defaults write NSGlobalDomain InitialKeyRepeat 15
 defaults write NSGlobalDomain KeyRepeat 2
 
 # ITerm2 prefs in custom location for syncing to dotfiles

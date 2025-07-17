@@ -64,14 +64,15 @@ brew install --quiet gnu-sed
 brew install --quiet gnu-tar
 brew install --quiet make
 brew install --quiet mpv
-brew install --quiet node
-brew install --quiet nvm
+#brew install --quiet node
+#brew install --quiet nvm
 brew install --quiet plantuml
 brew install --quiet ripgrep
 brew install --quiet pngpaste
 brew install --quiet pandoc
-brew install --quiet mactex
-brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
+brew install mactex
+#brew install --quiet emacs-plus@29 --with-imagemagick --with-native-comp --with-elrumo2-icon
+
 
 brew install --quiet rustup-init
 brew install --quiet rust-analyser
